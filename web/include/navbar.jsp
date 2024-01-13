@@ -15,19 +15,19 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<%= request.getContextPath() %>/home">Home</a>
+          <a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}">Home</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="<%= request.getContextPath() %>/services">Services</a>
+          <a class="nav-link " aria-current="page" href="${pageContext.request.contextPath}/service.jsp">Service</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="<%= request.getContextPath() %>/contact">Contact</a>
+          <a class="nav-link " aria-current="page" href="${pageContext.request.contextPath}/contact.jsp">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="<%= request.getContextPath() %>/login">Login</a>
+          <a class="nav-link " aria-current="page" href="${pageContext.request.contextPath}/login.jsp">Login</a>
         </li>
       </ul>
         
