@@ -12,13 +12,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.User;
+
 /**
  *
  * @author mac
  */
 public class authLogin extends HttpServlet {
+
+//    GET 
+//    type  = 1 -> register
+//    type = 2 -> lost tk mk
+//    POST -> login
+            
+
 //    demo db
     private User[] users;
+
     public void init() throws ServletException {
         users = new User[2];
         users[0] = new User(0, "nhtruong1", "pass1", "Nguyen Hai Truong", 'M', "22/09/2003");
@@ -26,12 +35,24 @@ public class authLogin extends HttpServlet {
     }
 //    demo db
 
-    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            response.setContentType("text/html;charset=UTF-8");
-            try (PrintWriter out = response.getWriter()) {
-                response.setContentType("text/html");
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            response.setContentType("text/html");
+           
+            
+            if ("GET".equalsIgnoreCase(request.getMethod())) {
+                String getType = request.getParameter("type");
+                if ("1".equals(getType)) {
+                    // Type 1: Register chuyen huong sang html direct 
+                } else if ("2".equals(getType)) {
+                    // Type 2: Lost password
+                    
+                    
+                }
+                
+            } else if ("POST".equalsIgnoreCase(request.getMethod())){
                 String username = request.getParameter("user");
                 String password = request.getParameter("pass");
 
@@ -45,10 +66,10 @@ public class authLogin extends HttpServlet {
                 } else {
                     response.sendRedirect("fail.jsp");
                 }
+            }
         }
     }
-    
-    
+
     private boolean isValidUser(String username, String password) {
         // Use a while loop to check if the login already exists in the User array
         int index = 0;
@@ -72,7 +93,6 @@ public class authLogin extends HttpServlet {
         return null;
     }
 
-   
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

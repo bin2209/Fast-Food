@@ -1,44 +1,25 @@
-<%-- 
-    Document   : navbar
-    Created on : Jan 9, 2024, 7:53:45 PM
-    Author     : mac
---%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+			<div class="container">
+                            <a class="navbar-brand" href="${pageContext.request.contextPath}"><img class="logo" src="${pageContext.request.contextPath}/static/images/logo.png" alt="alt"/>Fast Food</a>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Fast Food</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}">Home</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="${pageContext.request.contextPath}/service.jsp">Service</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="${pageContext.request.contextPath}/contact.jsp">Contact</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="${pageContext.request.contextPath}/login.jsp">Login</a>
-        </li>
-      </ul>
-        
-      <form class="" role="search">
-        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-      </form>
-        
-         <button class="btn btn-primary" type="button">Login</button>
-        
-       
-        
-    </div>
-  </div>
-</nav>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li> <a class="nav-link" href="${pageContext.request.contextPath}/index.jsp">Home</a></li>
+						<li><a class="nav-link active" href="${pageContext.request.contextPath}/menu.jsp">Menu</a></li>
+						<li><a class="nav-link" href="${pageContext.request.contextPath}/service.jsp">Services</a></li>
+						<li><a class="nav-link" href="${pageContext.request.contextPath}/contact.jsp">Contact us</a></li>
+					</ul>
+
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						<li><a class="nav-link" href="${pageContext.request.contextPath}/login.jsp"><img src="${pageContext.request.contextPath}/static/images/user.svg"></a></li>
+						<li><a class="nav-link" href="${pageContext.request.contextPath}/cart.jsp"><img src="${pageContext.request.contextPath}/static/images/cart.svg"></a></li>
+					</ul>
+				</div>
+			</div>
+				
+		</nav>
