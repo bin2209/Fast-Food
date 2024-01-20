@@ -9,15 +9,15 @@
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li> <a class="nav-link" href="${pageContext.request.contextPath}/index.jsp">Home</a></li>
-						<li><a class="nav-link active" href="${pageContext.request.contextPath}/menu.jsp">Menu</a></li>
-						<li><a class="nav-link" href="${pageContext.request.contextPath}/service.jsp">Services</a></li>
-						<li><a class="nav-link" href="${pageContext.request.contextPath}/contact.jsp">Contact us</a></li>
+						<li> <a class="nav-link" href="${pageContext.request.contextPath}">Home</a></li>
+						<li><a class="nav-link active" href="${pageContext.request.contextPath}/menu">Menu</a></li>
+						<li><a class="nav-link" href="${pageContext.request.contextPath}/service">Services</a></li>
+						<li><a class="nav-link" href="${pageContext.request.contextPath}/contact">Contact us</a></li>
 					</ul>
 
 					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-						<li><a class="nav-link" href="${pageContext.request.contextPath}/login.jsp"><img src="${pageContext.request.contextPath}/static/images/user.svg"></a></li>
-						<li><a class="nav-link" href="${pageContext.request.contextPath}/cart.jsp"><img src="${pageContext.request.contextPath}/static/images/cart.svg"></a></li>
+						<li><a class="nav-link" href="${pageContext.request.contextPath}/login"><img src="${pageContext.request.contextPath}/static/images/user.svg"></a></li>
+						<li><a class="nav-link" href="${pageContext.request.contextPath}/cart"><img src="${pageContext.request.contextPath}/static/images/cart.svg"></a></li>
 					</ul>
 				</div>
 			</div>

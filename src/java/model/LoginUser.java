@@ -6,28 +6,51 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class User implements Comparable<User> {
+public class LoginUser implements Comparable<LoginUser> {
     private int userID;
-    private String userName;
+    private String userEmail;
     private String userPass;
     private String userFullName;
     private char userSex;
     private Date userBirthDay;
 
-    public User(int userID, String userName, String userPass, String userFullName, char userSex, String userBirthDay) {
+    public LoginUser() {
+    }
+
+    
+    
+//    public LoginUser(int userID, String userEmail, String userPass, String userFullName, char userSex, String userBirthDay) {
+//        this.userID = userID;
+//        this.userEmail = userEmail;
+//        this.userPass = userPass;
+//        this.userFullName = userFullName;
+//        this.userSex = userSex;
+//
+//        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+//        try {
+//            this.userBirthDay = sdf.parse(userBirthDay);
+//        } catch (ParseException ex) {
+//            Logger.getLogger(LoginUser.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
+
+    
+    
+//    public LoginUser() {
+//        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+//    }
+
+    public LoginUser(int userID, String userEmail, String userPass, String userFullName, char userSex, Date userBirthDay) {
         this.userID = userID;
-        this.userName = userName;
+        this.userEmail = userEmail;
         this.userPass = userPass;
         this.userFullName = userFullName;
         this.userSex = userSex;
-
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        try {
-            this.userBirthDay = sdf.parse(userBirthDay);
-        } catch (ParseException ex) {
-            Logger.getLogger(User.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        this.userBirthDay = userBirthDay;
     }
+    
+    
+
 
     public int getUserID() {
         return userID;
@@ -37,12 +60,12 @@ public class User implements Comparable<User> {
         this.userID = userID;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUserEmail() {
+        return userEmail;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 
     public String getUserPass() {
@@ -88,7 +111,7 @@ public class User implements Comparable<User> {
         try {
             this.userBirthDay = sdf.parse(userBirthDay);
         } catch (ParseException ex) {
-            Logger.getLogger(User.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LoginUser.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -96,7 +119,7 @@ public class User implements Comparable<User> {
     public String toString() {
         return "User{" +
                 "userID=" + userID +
-                ", userName='" + userName + '\'' +
+                ", userName='" + userEmail + '\'' +
                 ", userPass='" + userPass + '\'' +
                 ", userFullName='" + userFullName + '\'' +
                 ", userSex=" + userSex +
@@ -105,7 +128,7 @@ public class User implements Comparable<User> {
     }
 
     @Override
-    public int compareTo(User otherUser) {
+    public int compareTo(LoginUser otherUser) {
         return Integer.compare(this.userID, otherUser.userID);
     }
 }
