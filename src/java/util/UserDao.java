@@ -22,6 +22,7 @@ public class UserDao {
         conn = DBConfig.getConnection();//connect to database
     }
 
+    
     //Validates login with user input
     public boolean validateLogin(String em, String pw) {
         boolean canLogin = false;
@@ -54,7 +55,6 @@ public class UserDao {
 
             if (rs.next()) {
                 user.setUserID(rs.getInt("userID"));
-//                user.setUserEmail(rs.getString("username"));
                 user.setUserEmail(rs.getString("userEmail"));
                 user.setUserPass(rs.getString("userPass"));
 

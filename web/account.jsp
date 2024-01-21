@@ -17,19 +17,14 @@
                 <div class="p-3 p-lg-5 border bg-white">
                     
                     <div class="form-group row">
-                        <div class="col-md-6">
-                            <label for="c_fname" class="text-black">Full Name Name <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="c_fname" name="c_fname">
+                        <div class="col-md-12">
+                            <label for="c_fname" class="text-black">Full Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="c_fname" name="c_fname" placeholder="<%=session.getAttribute("userFullName")%>">
                         </div>
                         
                     </div>
 
-                    <div class="form-group row">
-                        <div class="col-md-12">
-                            <label for="c_companyname" class="text-black">Company Name </label>
-                            <input type="text" class="form-control" id="c_companyname" name="c_companyname">
-                        </div>
-                    </div>
+                  
 
                     <div class="form-group row">
                         <div class="col-md-12">
@@ -56,7 +51,7 @@
                     <div class="form-group row mb-5">
                         <div class="col-md-6">
                             <label for="c_email_address" class="text-black">Email Address <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="c_email_address" name="c_email_address">
+                            <input type="text" class="form-control" id="c_email_address" name="c_email_address" placeholder="<%=session.getAttribute("userEmail")%>">
                         </div>
                         <div class="col-md-6">
                             <label for="c_phone" class="text-black">Phone <span class="text-danger">*</span></label>
@@ -160,79 +155,7 @@
 
                 </div>
             </div>
-            <div class="col-md-6">
-
-
-                <div class="row mb-5">
-                    <div class="col-md-12">
-                        <h2 class="h3 mb-3 text-black">Your Order</h2>
-                        <div class="p-3 p-lg-5 border bg-white">
-                            <table class="table site-block-order-table mb-5">
-                                <thead>
-                                <th>Product</th>
-                                <th>Total</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Top Up T-Shirt <strong class="mx-2">x</strong> 1</td>
-                                        <td>$250.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Polo Shirt <strong class="mx-2">x</strong>   1</td>
-                                        <td>$100.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-black font-weight-bold"><strong>Cart Subtotal</strong></td>
-                                        <td class="text-black">$350.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-black font-weight-bold"><strong>Order Total</strong></td>
-                                        <td class="text-black font-weight-bold"><strong>$350.00</strong></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <div class="border p-3 mb-3">
-                                <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse" href="#collapsebank" role="button" aria-expanded="false" aria-controls="collapsebank">Direct Bank Transfer</a></h3>
-
-                                <div class="collapse" id="collapsebank">
-                                    <div class="py-2">
-                                        <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="border p-3 mb-3">
-                                <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse" href="#collapsecheque" role="button" aria-expanded="false" aria-controls="collapsecheque">Cheque Payment</a></h3>
-
-                                <div class="collapse" id="collapsecheque">
-                                    <div class="py-2">
-                                        <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="border p-3 mb-5">
-                                <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse" href="#collapsepaypal" role="button" aria-expanded="false" aria-controls="collapsepaypal">Paypal</a></h3>
-
-                                <div class="collapse" id="collapsepaypal">
-                                    <div class="py-2">
-                                        <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location = 'thankyou.html'">Place Order</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
-        <!-- </form> -->
     </div>
 </section>
 

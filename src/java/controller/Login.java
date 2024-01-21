@@ -45,7 +45,7 @@ public class Login extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession(false);
 //        Check truong hop da dang nhap roi
-        if (session != null && session.getAttribute("email") != null) {
+        if (session != null && session.getAttribute("userEmail") != null) {
             response.sendRedirect(NORMALPG);
         } else {
             request.getRequestDispatcher("login.jsp").forward(request, response);
@@ -100,7 +100,14 @@ public class Login extends HttpServlet {
             //create session and store variables
             LoginUser user = dao.userSession(em);
             HttpSession session = request.getSession();
-            session.setAttribute("email", user.getUserEmail());
+
+            // Khoi tao session trong database
+            session.setAttribute("userID", user.getUserID());
+            session.setAttribute("userEmail", user.getUserEmail());
+            session.setAttribute("userFullName", user.getUserFullName());
+//            session.setAttribute("userSex", user.getUserSex());
+//            session.setAttribute("userBirthDay", user.getUserBirthDay());
+
             //load welcome page with session data
             response.sendRedirect(NORMALPG);
 
