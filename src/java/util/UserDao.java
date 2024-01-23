@@ -22,7 +22,6 @@ public class UserDao {
         conn = DBConfig.getConnection();//connect to database
     }
 
-    
     //Validates login with user input
     public boolean validateLogin(String em, String pw) {
         boolean canLogin = false;
@@ -43,6 +42,23 @@ public class UserDao {
         return canLogin;
     }
 
+//    Validates register with user email
+    public boolean validateRegister(String em) {
+        boolean canRegister = true; // Initialize the flag to true, assuming the email can be registered
+
+        try (PreparedStatement ps = conn.prepareStatement("SELECT * FROM User WHERE userEmail=?")) {
+            ps.setString(1, em);
+            try (ResultSet rs = ps.executeQuery()) {
+                canRegister = !rs.next(); // Update the flag based on whether the email exists
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            // Handle the exception, log it, or throw it if needed
+        }
+
+        return canRegister; //return true if the email is not found
+    }
+
     //returns user info from specified email for session
     public LoginUser userSession(String em) {
         LoginUser user = new LoginUser();
@@ -54,9 +70,26 @@ public class UserDao {
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
+                //khoitao sestion
                 user.setUserID(rs.getInt("userID"));
+                user.setUserFullName(rs.getString("userFullName"));
                 user.setUserEmail(rs.getString("userEmail"));
+                user.setUserPhone(rs.getString("userPhone"));
                 user.setUserPass(rs.getString("userPass"));
+
+                // BUG: XU LY CHAR AT (0)
+                String userSexFromDb = rs.getString("userSex");
+                user.setUserSex(userSexFromDb != null && !userSexFromDb.isEmpty() ? userSexFromDb.charAt(0) : ' ');
+
+                //BUG: XU LY STRING NULL
+                String userBirthDayFromDb = rs.getString("userBirthday");
+                if (userBirthDayFromDb != null) {
+                    user.setUserBirthDay(userBirthDayFromDb);
+                } else {
+                    // Handle the case when the "userBirthday" is null
+                    user.setUserBirthDay("");  // or set a default value, or handle it according to your requirements
+                }
+                user.setUserRole(rs.getInt("userRole"));
 
             }
         } catch (SQLException e) {
@@ -65,19 +98,20 @@ public class UserDao {
         return user;
     }
 
-    //Creates a new user with input data
-//    public void createUser(LoginUser user) {
-//        try {
-//            PreparedStatement ps = conn
-//                    .prepareStatement("insert into TheUser(username,psword,email) values (?,?,?)");//add user to database
-//            ps.setString(1, user.getUsername());
-//            ps.setString(2, user.getPsword());
-//            ps.setString(3, user.getEmail());
-//            ps.executeUpdate();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//    }
+//    Creates a new user with input data
+    public void createUser(LoginUser user) {
+        try {
+            PreparedStatement ps = conn
+                    .prepareStatement("insert into User(userFullName,userEmail,userPass,userRole) values (?,?,?,1)");//add user to database
+            ps.setString(1, user.getUserFullName());
+            ps.setString(2, user.getUserEmail());
+            ps.setString(3, user.getUserPass());
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     //update user with input data
 //    public void editAccount(LoginUser user) {
 //        try {

@@ -9,23 +9,36 @@
 <%@ include file="include/navbar.jsp" %>
 
 
+<section class="why-choose-section">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5">
+                <div class="img-wrap">
+                    <img src="${pageContext.request.contextPath}/static/images/register.jpg" alt="Image" class="img-fluid">
+                </div>
 
-<div class="container" style="padding: 40px 0px;">
-    <form method="post">
-        <div class="mb-3">
-            <label class="form-label">Username</label>
-            <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+            </div>
+            <div class="col-lg-5 container">
+                <h2 class="section-title">Login</h2>
+
+                <form method="post">
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="text" name="email" class="form-control" aria-describedby="emailHelp" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control"  required>
+                    </div>    
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <p><a class="link-opacity-100-hover" href="login?e=register">Trở thành thành viên Fast Food</a></p>
+                    <p><a class="link-opacity-100-hover" href="login?e=lostaccount">Quên mật khẩu?</a></p>
+                </form>
+            </div>
         </div>
-
-        <div class="mb-3">
-            <label class="form-label">Password</label>
-            <input type="password" name="password" class="form-control" id="exampleInputPassword1">
-        </div>    
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <p><a class="link-opacity-100-hover" href="?e=register">Trở thành thành viên Fast Food</a></p>
-        <p><a class="link-opacity-100-hover" href="?e=lostaccount">Quên mật khẩu?</a></p>
-    </form>
-</div>e
+    </div>
+</section>
 
 
 

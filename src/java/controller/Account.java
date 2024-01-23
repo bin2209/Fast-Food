@@ -15,7 +15,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 /**
  *
  * @author mac
@@ -24,15 +25,18 @@ import javax.servlet.http.HttpSession;
 //user co the edit thong tin o day Get/post
 public class Account extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+    @GetMapping("/account/favourite-orders")
+    public String favouriteOrders(Model model) {
+        // Add logic and data for the "Favourite Orders" page
+        return "account";
+    }
+
+    @GetMapping("/account/edit")
+    public String edit(Model model) {
+        // Add logic and data for the "Edit" page
+        return "account";
+    }
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -51,7 +55,6 @@ public class Account extends HttpServlet {
             
         }
     }
-
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -127,5 +130,4 @@ public class Account extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }

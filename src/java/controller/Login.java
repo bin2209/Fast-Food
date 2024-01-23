@@ -67,15 +67,26 @@ public class Login extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String getType = request.getParameter("e");
-        if ("register".equals(getType)) {
-            // Type 1: Register redirect to register.jsp
-            request.getRequestDispatcher("register.jsp").forward(request, response);
-        } else if ("lostaccount".equals(getType)) {
-            // Type 2: Lost password
-            request.getRequestDispatcher("lostaccount.jsp").forward(request, response);
-        }
 
-        processRequest(request, response);
+        if (getType != null && !getType.isEmpty()) {
+            switch (getType) {
+                case "register":
+                    request.getRequestDispatcher("register.jsp").forward(request, response);
+                    break;
+                case "lostaccount":
+                    request.getRequestDispatcher("lostaccount.jsp").forward(request, response);
+                    break;
+                case "registersuccess":
+                    request.getRequestDispatcher("loginstatus.jsp").forward(request, response);
+                    break;
+                default:
+                    request.getRequestDispatcher("login.jsp").forward(request, response);
+
+            }
+        } else {
+            request.getRequestDispatcher("login.jsp").forward(request, response);
+
+        }
     }
 
     /**
@@ -103,11 +114,13 @@ public class Login extends HttpServlet {
 
             // Khoi tao session trong database
             session.setAttribute("userID", user.getUserID());
-            session.setAttribute("userEmail", user.getUserEmail());
             session.setAttribute("userFullName", user.getUserFullName());
+            session.setAttribute("userEmail", user.getUserEmail());
+            session.setAttribute("userSex", user.getUserSex());
+            session.setAttribute("userBirthDay", user.getUserBirthDay());
+
 //            session.setAttribute("userSex", user.getUserSex());
 //            session.setAttribute("userBirthDay", user.getUserBirthDay());
-
             //load welcome page with session data
             response.sendRedirect(NORMALPG);
 
