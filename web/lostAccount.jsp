@@ -14,7 +14,7 @@
 %>
 
 <div class="container" style="padding: 40px 0px;">
-    <form action="authLogin" method="post">
+    <form action="" method="post">
         <div class="mb-3">
             <label class="form-label">Email</label>
             <input type="email" name="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
@@ -23,8 +23,8 @@
       
 
         <button type="submit" class="btn btn-primary">Submit</button>
-        <p><a class="link-opacity-100-hover" href="${pageContext.request.contextPath}/login"> Đã là thành viên Fast Food</a></p>
-        <p><a class="link-opacity-100-hover" href="${pageContext.request.contextPath}/login?type=1">Đăng ký tài khoản</a></p>
+        <p><a class="link-opacity-100-hover" href="login">Trở về đăng nhập</a></p>
+        <p><a class="link-opacity-100-hover" href="?e=register">Đăng ký tài khoản</a></p>
     </form>
 </div>
 

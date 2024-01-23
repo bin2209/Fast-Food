@@ -21,12 +21,11 @@
             <label class="form-label">Password</label>
             <input type="password" name="password" class="form-control" id="exampleInputPassword1">
         </div>    
-
         <button type="submit" class="btn btn-primary">Submit</button>
-        <p><a class="link-opacity-100-hover" href="${pageContext.request.contextPath}/Login?type=1">Trở thành thành viên Fast Food</a></p>
-        <p><a class="link-opacity-100-hover" href="${pageContext.request.contextPath}/Login?type=2">Quên mật khẩu?</a></p>
+        <p><a class="link-opacity-100-hover" href="?e=register">Trở thành thành viên Fast Food</a></p>
+        <p><a class="link-opacity-100-hover" href="?e=lostaccount">Quên mật khẩu?</a></p>
     </form>
-</div>
+</div>e
 
 
 

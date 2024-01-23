@@ -5,22 +5,24 @@
         <group>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/include/header.jsp</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/include/footer.jsp</file>
-            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/model/User.java</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/Login.java</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/index.jsp</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/static/css/styles.css</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/lostAccount.jsp</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/account.jsp</file>
-            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/logout.java</file>
-            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/account.java</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/util/UserDao.java</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/Menu.java</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/menu.jsp</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/redirect.jsp</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/Logout.java</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/WEB-INF/dispatcher-servlet.xml</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/model/LoginUser.java</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/include/navbar.jsp</file>
-            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/authLogin.java</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/login.jsp</file>
-            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/login.java</file>
-            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/menu.java</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/Account.java</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/util/DBConfig.java</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/WEB-INF/applicationContext.xml</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/Cart.java</file>
             <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/register.jsp</file>
         </group>
     </open-files>

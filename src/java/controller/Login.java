@@ -66,13 +66,13 @@ public class Login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String getType = request.getParameter("type");
-        if ("1".equals(getType)) {
+        String getType = request.getParameter("e");
+        if ("register".equals(getType)) {
             // Type 1: Register redirect to register.jsp
             request.getRequestDispatcher("register.jsp").forward(request, response);
-        } else if ("2".equals(getType)) {
+        } else if ("lostaccount".equals(getType)) {
             // Type 2: Lost password
-            request.getRequestDispatcher("lostAccount.jsp").forward(request, response);
+            request.getRequestDispatcher("lostaccount.jsp").forward(request, response);
         }
 
         processRequest(request, response);
