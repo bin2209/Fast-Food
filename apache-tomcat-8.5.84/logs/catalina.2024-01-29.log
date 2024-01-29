@@ -1,0 +1,93 @@
+29-Jan-2024 21:26:19.748 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.84
+29-Jan-2024 21:26:19.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2022 13:34:24 UTC
+29-Jan-2024 21:26:19.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.84.0
+29-Jan-2024 21:26:19.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jan-2024 21:26:19.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.6.1
+29-Jan-2024 21:26:19.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+29-Jan-2024 21:26:19.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home
+29-Jan-2024 21:26:19.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.1+12-LTS-29
+29-Jan-2024 21:26:19.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jan-2024 21:26:19.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84
+29-Jan-2024 21:26:19.758 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84
+29-Jan-2024 21:26:19.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jan-2024 21:26:19.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jan-2024 21:26:19.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jan-2024 21:26:19.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jan-2024 21:26:19.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jan-2024 21:26:19.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/conf/logging.properties
+29-Jan-2024 21:26:19.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jan-2024 21:26:19.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|Macs-MacBook-Pro.local
+29-Jan-2024 21:26:19.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jan-2024 21:26:19.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jan-2024 21:26:19.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jan-2024 21:26:19.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+29-Jan-2024 21:26:19.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84
+29-Jan-2024 21:26:19.761 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84
+29-Jan-2024 21:26:19.761 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/temp
+29-Jan-2024 21:26:19.761 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/mac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jan-2024 21:26:19.841 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jan-2024 21:26:19.899 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1250 ms
+29-Jan-2024 21:26:19.976 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jan-2024 21:26:19.977 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.84]
+29-Jan-2024 21:26:19.987 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/docs]
+29-Jan-2024 21:26:20.446 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/docs] has finished in [458] ms
+29-Jan-2024 21:26:20.447 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/manager]
+29-Jan-2024 21:26:20.512 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/manager] has finished in [65] ms
+29-Jan-2024 21:26:20.513 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/examples]
+29-Jan-2024 21:26:20.984 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/examples] has finished in [471] ms
+29-Jan-2024 21:26:20.984 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/ROOT]
+29-Jan-2024 21:26:21.030 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/ROOT] has finished in [46] ms
+29-Jan-2024 21:26:21.031 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/host-manager]
+29-Jan-2024 21:26:21.101 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/host-manager] has finished in [69] ms
+29-Jan-2024 21:26:21.105 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jan-2024 21:26:21.135 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1234 ms
+29-Jan-2024 21:26:28.633 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/conf/Catalina/localhost/Fast_Food.xml]
+29-Jan-2024 21:26:31.519 INFO [http-nio-8080-exec-4] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jan-2024 21:26:31.574 INFO [http-nio-8080-exec-4] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+29-Jan-2024 21:26:31.667 INFO [http-nio-8080-exec-4] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon Jan 29 21:26:31 ICT 2024]; root of context hierarchy
+29-Jan-2024 21:26:31.750 INFO [http-nio-8080-exec-4] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+29-Jan-2024 21:26:31.940 INFO [http-nio-8080-exec-4] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 365 ms
+29-Jan-2024 21:26:32.036 INFO [http-nio-8080-exec-4] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+29-Jan-2024 21:26:32.043 INFO [http-nio-8080-exec-4] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Jan 29 21:26:32 ICT 2024]; parent: Root WebApplicationContext
+29-Jan-2024 21:26:32.043 INFO [http-nio-8080-exec-4] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+29-Jan-2024 21:26:32.423 INFO [http-nio-8080-exec-4] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/index.htm] onto handler 'indexController'
+29-Jan-2024 21:26:32.641 INFO [http-nio-8080-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Jan 29 21:26:32 ICT 2024]; parent: Root WebApplicationContext
+29-Jan-2024 21:26:32.717 INFO [http-nio-8080-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Jan 29 21:26:32 ICT 2024]; parent: Root WebApplicationContext
+29-Jan-2024 21:26:32.816 INFO [http-nio-8080-exec-4] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+29-Jan-2024 21:26:32.828 INFO [http-nio-8080-exec-4] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 792 ms
+29-Jan-2024 21:26:32.832 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/conf/Catalina/localhost/Fast_Food.xml] has finished in [4,199] ms
+29-Jan-2024 21:26:32.840 INFO [http-nio-8080-exec-5] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Fast_Food]] after start() had already been called. The second call will be ignored.
+29-Jan-2024 21:27:15.439 SEVERE [http-nio-8080-exec-2] model.LoginUser.setUserBirthDay null
+	java.text.ParseException: Unparseable date: ""
+		at java.base/java.text.DateFormat.parse(DateFormat.java:399)
+		at model.LoginUser.setUserBirthDay(LoginUser.java:109)
+		at util.UserDao.userSession(UserDao.java:90)
+		at controller.Login.doPost(Login.java:112)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:682)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:765)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:367)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:885)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1688)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)

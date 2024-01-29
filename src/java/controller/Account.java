@@ -1,9 +1,5 @@
 package controller;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -17,53 +13,35 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-/**
- *
- * @author mac
- */
-//Account 
-//user co the edit thong tin o day Get/post
+
 public class Account extends HttpServlet {
 
-    @GetMapping("/account/favourite-orders")
-    public String favouriteOrders(Model model) {
-        // Add logic and data for the "Favourite Orders" page
-        return "account";
-    }
+//    @GetMapping("/account/favourite-orders")
+//    public String favouriteOrders(Model model) {
+//        return "account";
+//    }
 
     @GetMapping("/account/edit")
     public String edit(Model model) {
-        // Add logic and data for the "Edit" page
+//          request.getRequestDispatcher("templates/edit.jsp").forward(request, response);
         return "account";
     }
-    
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             HttpSession session = request.getSession(false);
-            
-//        Check truong hop da dang nhap roi
+
+            // Check truong hop da dang nhap roi
             if (session != null && session.getAttribute("userEmail") != null) {
-//                response.sendRedirect(NORMALPG);
-                request.getRequestDispatcher("account.jsp").forward(request, response);
+                request.getRequestDispatcher("templates/account.jsp").forward(request, response);
             } else {
                 request.getRequestDispatcher("login.jsp").forward(request, response);
             }
-
-//         Neu chua thi return login
-            
         }
     }
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -79,14 +57,6 @@ public class Account extends HttpServlet {
         }
     }
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -106,7 +76,6 @@ public class Account extends HttpServlet {
                         if (rs.next()) {
                             HttpSession session = request.getSession();
                             session.setAttribute("name", username);
-//                                    request.getRequestDispatcher("Account.jsp").forward(request, response);
                             response.sendRedirect("account");
                         } else {
                             request.getRequestDispatcher("account2.jsp").forward(request, response);
@@ -115,19 +84,12 @@ public class Account extends HttpServlet {
                 }
             }
         } catch (Exception e) {
-            // Log the exception or display a more user-friendly error message
             System.err.println(e);
-            // You might want to redirect to an error page here
         }
     }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 }
