@@ -42,7 +42,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Account</servlet-name>
-        <url-pattern>/account</url-pattern>
+        <url-pattern>/account/*</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Menu</servlet-name>

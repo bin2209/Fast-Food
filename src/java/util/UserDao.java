@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import model.LoginUser;
 
 /**
@@ -59,8 +60,13 @@ public class UserDao {
         return canRegister; //return true if the email is not found
     }
 
+    
+    
+    
+    
+    
     //returns user info from specified email for session
-    public LoginUser userSession(String em) {
+    public  LoginUser userSession(String em) {
         LoginUser user = new LoginUser();
         try {
             PreparedStatement ps = conn
@@ -70,33 +76,46 @@ public class UserDao {
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
-                //khoitao sestion
+                //khoitao user | doc tu database 
                 user.setUserID(rs.getInt("userID"));
                 user.setUserFullName(rs.getString("userFullName"));
                 user.setUserEmail(rs.getString("userEmail"));
                 user.setUserPhone(rs.getString("userPhone"));
                 user.setUserPass(rs.getString("userPass"));
-
-                // BUG: XU LY CHAR AT (0)
-                String userSexFromDb = rs.getString("userSex");
-                user.setUserSex(userSexFromDb != null && !userSexFromDb.isEmpty() ? userSexFromDb.charAt(0) : ' ');
-
-                //BUG: XU LY STRING NULL
-                String userBirthDayFromDb = rs.getString("userBirthday");
-                if (userBirthDayFromDb != null) {
-                    user.setUserBirthDay(userBirthDayFromDb);
-                } else {
-                    // Handle the case when the "userBirthday" is null
-                    user.setUserBirthDay("");  // or set a default value, or handle it according to your requirements
-                }
+                user.setUserSex(rs.getString("userSex").charAt(0));
                 user.setUserRole(rs.getInt("userRole"));
 
+                try {
+                    java.sql.Date userBirthDayFromDb = rs.getDate("userBirthDay");
+
+                    if (userBirthDayFromDb != null) {
+                        // Use SimpleDateFormat to format the Date as a string
+                        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd"); // Adjust the format as needed
+                        String formattedDate = dateFormat.format(userBirthDayFromDb);
+
+                        user.setUserBirthDay(formattedDate);
+                    } else {
+                        // Handle the case where the retrieved date is null
+                        // Set a default value or handle it according to your requirements
+                        user.setUserBirthDay(null); // or another default value
+                    }
+                } catch (SQLException e) {
+                    // Handle any SQLException that might occur during the retrieval
+                    e.printStackTrace(); // Log or handle the exception appropriately
+                }
+
             }
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return user;
     }
+    
+    
+    
+    
+    
 
 //    Creates a new user with input data
     public void createUser(LoginUser user) {

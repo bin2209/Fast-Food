@@ -1,0 +1,311 @@
+30-Jan-2024 12:52:33.503 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Jan-2024 12:52:33.560 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Jan-2024 12:52:33.616 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Jan-2024 12:52:33.886 INFO [localhost-startStop-3] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Jan 29 23:09:34 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 12:52:33.957 INFO [localhost-startStop-3] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon Jan 29 23:09:33 ICT 2024]; root of context hierarchy
+30-Jan-2024 12:52:34.143 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Jan-2024 12:52:34.623 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Jan-2024 19:20:59.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.84
+30-Jan-2024 19:20:59.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2022 13:34:24 UTC
+30-Jan-2024 19:20:59.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.84.0
+30-Jan-2024 19:20:59.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+30-Jan-2024 19:20:59.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.6.1
+30-Jan-2024 19:20:59.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+30-Jan-2024 19:20:59.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home
+30-Jan-2024 19:20:59.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.1+12-LTS-29
+30-Jan-2024 19:20:59.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-Jan-2024 19:20:59.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84
+30-Jan-2024 19:20:59.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84
+30-Jan-2024 19:20:59.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Jan-2024 19:20:59.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Jan-2024 19:20:59.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Jan-2024 19:20:59.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Jan-2024 19:20:59.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Jan-2024 19:20:59.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/conf/logging.properties
+30-Jan-2024 19:20:59.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Jan-2024 19:20:59.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|Macs-MBP.lan
+30-Jan-2024 19:20:59.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Jan-2024 19:20:59.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Jan-2024 19:20:59.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-Jan-2024 19:20:59.230 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-Jan-2024 19:20:59.230 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84
+30-Jan-2024 19:20:59.230 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84
+30-Jan-2024 19:20:59.230 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/temp
+30-Jan-2024 19:20:59.230 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/mac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+30-Jan-2024 19:20:59.384 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Jan-2024 19:20:59.564 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2242 ms
+30-Jan-2024 19:20:59.786 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Jan-2024 19:20:59.787 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.84]
+30-Jan-2024 19:20:59.810 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/conf/Catalina/localhost/Fast_Food.xml]
+30-Jan-2024 19:21:05.559 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Jan-2024 19:21:05.653 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Jan-2024 19:21:05.840 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Tue Jan 30 19:21:05 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:21:06.029 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+30-Jan-2024 19:21:06.362 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 709 ms
+30-Jan-2024 19:21:06.569 INFO [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+30-Jan-2024 19:21:06.577 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:21:06 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:21:06.578 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+30-Jan-2024 19:21:07.414 INFO [localhost-startStop-1] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/index.htm] onto handler 'indexController'
+30-Jan-2024 19:21:07.798 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:21:06 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:21:07.982 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:21:06 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:21:08.178 INFO [localhost-startStop-1] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+30-Jan-2024 19:21:08.196 INFO [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 1627 ms
+30-Jan-2024 19:21:08.226 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/conf/Catalina/localhost/Fast_Food.xml] has finished in [8,415] ms
+30-Jan-2024 19:21:08.228 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/docs]
+30-Jan-2024 19:21:08.312 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/docs] has finished in [85] ms
+30-Jan-2024 19:21:08.313 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/manager]
+30-Jan-2024 19:21:08.410 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/manager] has finished in [96] ms
+30-Jan-2024 19:21:08.410 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/examples]
+30-Jan-2024 19:21:08.750 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/examples] has finished in [340] ms
+30-Jan-2024 19:21:08.751 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/ROOT]
+30-Jan-2024 19:21:08.793 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/ROOT] has finished in [42] ms
+30-Jan-2024 19:21:08.794 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/host-manager]
+30-Jan-2024 19:21:08.848 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/mac/FPT Education/Java Web/Fast Food/apache-tomcat-8.5.84/webapps/host-manager] has finished in [53] ms
+30-Jan-2024 19:21:08.851 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Jan-2024 19:21:08.883 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 9315 ms
+30-Jan-2024 19:21:11.153 INFO [http-nio-8080-exec-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] has started
+30-Jan-2024 19:21:11.155 INFO [http-nio-8080-exec-1] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:21:06 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:21:11.157 INFO [http-nio-8080-exec-1] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Tue Jan 30 19:21:05 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:21:14.539 INFO [http-nio-8080-exec-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Jan-2024 19:21:14.588 INFO [http-nio-8080-exec-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Jan-2024 19:21:14.682 INFO [http-nio-8080-exec-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Tue Jan 30 19:21:14 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:21:14.801 INFO [http-nio-8080-exec-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+30-Jan-2024 19:21:14.964 INFO [http-nio-8080-exec-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 375 ms
+30-Jan-2024 19:21:15.128 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+30-Jan-2024 19:21:15.137 INFO [http-nio-8080-exec-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:21:15 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:21:15.138 INFO [http-nio-8080-exec-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+30-Jan-2024 19:21:15.671 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/index.htm] onto handler 'indexController'
+30-Jan-2024 19:21:15.994 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:21:15 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:21:16.188 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:21:15 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:21:16.387 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+30-Jan-2024 19:21:16.405 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 1276 ms
+30-Jan-2024 19:21:16.407 INFO [http-nio-8080-exec-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] is completed
+30-Jan-2024 19:21:42.032 SEVERE [http-nio-8080-exec-12] model.LoginUser.setUserBirthDay null
+	java.text.ParseException: Unparseable date: ""
+		at java.base/java.text.DateFormat.parse(DateFormat.java:399)
+		at model.LoginUser.setUserBirthDay(LoginUser.java:109)
+		at util.UserDao.userSession(UserDao.java:90)
+		at controller.Login.doPost(Login.java:112)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:682)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:765)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:367)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:885)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1688)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+30-Jan-2024 19:22:13.750 INFO [http-nio-8080-exec-5] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] has started
+30-Jan-2024 19:22:13.751 INFO [http-nio-8080-exec-5] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:21:15 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:22:13.775 INFO [http-nio-8080-exec-5] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Tue Jan 30 19:21:14 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:22:13.815 WARNING [http-nio-8080-exec-5] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Fast_Food] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Jan-2024 19:22:13.815 WARNING [http-nio-8080-exec-5] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Fast_Food] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:93)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+30-Jan-2024 19:22:15.556 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1440)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1065)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:125)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:92)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+30-Jan-2024 19:22:17.711 INFO [http-nio-8080-exec-5] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Jan-2024 19:22:17.761 INFO [http-nio-8080-exec-5] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Jan-2024 19:22:17.846 INFO [http-nio-8080-exec-5] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Tue Jan 30 19:22:17 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:22:17.947 INFO [http-nio-8080-exec-5] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+30-Jan-2024 19:22:18.081 INFO [http-nio-8080-exec-5] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 320 ms
+30-Jan-2024 19:22:18.200 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+30-Jan-2024 19:22:18.207 INFO [http-nio-8080-exec-5] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:22:18 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:22:18.207 INFO [http-nio-8080-exec-5] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+30-Jan-2024 19:22:18.588 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/index.htm] onto handler 'indexController'
+30-Jan-2024 19:22:18.802 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:22:18 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:22:18.874 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:22:18 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:22:18.975 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+30-Jan-2024 19:22:18.988 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 788 ms
+30-Jan-2024 19:22:18.990 INFO [http-nio-8080-exec-5] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] is completed
+30-Jan-2024 19:23:02.710 INFO [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] has started
+30-Jan-2024 19:23:02.711 INFO [http-nio-8080-exec-11] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:22:18 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:23:02.713 INFO [http-nio-8080-exec-11] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Tue Jan 30 19:22:17 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:23:06.211 INFO [http-nio-8080-exec-11] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Jan-2024 19:23:06.270 INFO [http-nio-8080-exec-11] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Jan-2024 19:23:06.466 INFO [http-nio-8080-exec-11] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Tue Jan 30 19:23:06 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:23:06.575 INFO [http-nio-8080-exec-11] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+30-Jan-2024 19:23:06.697 INFO [http-nio-8080-exec-11] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 427 ms
+30-Jan-2024 19:23:06.802 INFO [http-nio-8080-exec-11] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+30-Jan-2024 19:23:06.811 INFO [http-nio-8080-exec-11] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:23:06 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:23:06.812 INFO [http-nio-8080-exec-11] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+30-Jan-2024 19:23:07.304 INFO [http-nio-8080-exec-11] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/index.htm] onto handler 'indexController'
+30-Jan-2024 19:23:07.545 INFO [http-nio-8080-exec-11] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:23:06 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:23:07.634 INFO [http-nio-8080-exec-11] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:23:06 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:23:07.737 INFO [http-nio-8080-exec-11] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+30-Jan-2024 19:23:07.752 INFO [http-nio-8080-exec-11] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 950 ms
+30-Jan-2024 19:23:07.754 INFO [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] is completed
+30-Jan-2024 19:24:53.238 INFO [http-nio-8080-exec-19] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] has started
+30-Jan-2024 19:24:53.239 INFO [http-nio-8080-exec-19] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:23:06 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:24:53.242 INFO [http-nio-8080-exec-19] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Tue Jan 30 19:23:06 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:24:56.060 INFO [http-nio-8080-exec-19] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Jan-2024 19:24:56.133 INFO [http-nio-8080-exec-19] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Jan-2024 19:24:56.272 INFO [http-nio-8080-exec-19] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Tue Jan 30 19:24:56 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:24:56.361 INFO [http-nio-8080-exec-19] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+30-Jan-2024 19:24:56.504 INFO [http-nio-8080-exec-19] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 371 ms
+30-Jan-2024 19:24:56.595 INFO [http-nio-8080-exec-19] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+30-Jan-2024 19:24:56.602 INFO [http-nio-8080-exec-19] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:24:56 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:24:56.603 INFO [http-nio-8080-exec-19] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+30-Jan-2024 19:24:57.224 INFO [http-nio-8080-exec-19] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/index.htm] onto handler 'indexController'
+30-Jan-2024 19:24:57.512 INFO [http-nio-8080-exec-19] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:24:56 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:24:57.656 INFO [http-nio-8080-exec-19] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:24:56 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:24:58.012 INFO [http-nio-8080-exec-19] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+30-Jan-2024 19:24:58.049 INFO [http-nio-8080-exec-19] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 1454 ms
+30-Jan-2024 19:24:58.051 INFO [http-nio-8080-exec-19] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] is completed
+30-Jan-2024 19:24:58.444 INFO [http-nio-8080-exec-18] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] has started
+30-Jan-2024 19:24:58.446 INFO [http-nio-8080-exec-18] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:24:56 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:24:58.449 INFO [http-nio-8080-exec-18] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Tue Jan 30 19:24:56 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:25:01.656 INFO [http-nio-8080-exec-18] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Jan-2024 19:25:01.699 INFO [http-nio-8080-exec-18] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Jan-2024 19:25:01.890 INFO [http-nio-8080-exec-18] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Tue Jan 30 19:25:01 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:25:01.986 INFO [http-nio-8080-exec-18] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+30-Jan-2024 19:25:02.212 INFO [http-nio-8080-exec-18] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 513 ms
+30-Jan-2024 19:25:02.405 INFO [http-nio-8080-exec-18] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+30-Jan-2024 19:25:02.414 INFO [http-nio-8080-exec-18] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:25:02 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:25:02.415 INFO [http-nio-8080-exec-18] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+30-Jan-2024 19:25:02.800 INFO [http-nio-8080-exec-18] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/index.htm] onto handler 'indexController'
+30-Jan-2024 19:25:02.988 INFO [http-nio-8080-exec-18] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:25:02 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:25:03.063 INFO [http-nio-8080-exec-18] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:25:02 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:25:03.183 INFO [http-nio-8080-exec-18] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+30-Jan-2024 19:25:03.199 INFO [http-nio-8080-exec-18] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 793 ms
+30-Jan-2024 19:25:03.202 INFO [http-nio-8080-exec-18] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] is completed
+30-Jan-2024 19:25:03.549 INFO [http-nio-8080-exec-22] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] has started
+30-Jan-2024 19:25:03.550 INFO [http-nio-8080-exec-22] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:25:02 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:25:03.555 INFO [http-nio-8080-exec-22] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Tue Jan 30 19:25:01 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:25:05.448 INFO [http-nio-8080-exec-22] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Jan-2024 19:25:05.487 INFO [http-nio-8080-exec-22] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Jan-2024 19:25:05.552 INFO [http-nio-8080-exec-22] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Tue Jan 30 19:25:05 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:25:05.621 INFO [http-nio-8080-exec-22] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+30-Jan-2024 19:25:05.711 INFO [http-nio-8080-exec-22] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 224 ms
+30-Jan-2024 19:25:05.799 INFO [http-nio-8080-exec-22] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+30-Jan-2024 19:25:05.805 INFO [http-nio-8080-exec-22] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:25:05 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:25:05.806 INFO [http-nio-8080-exec-22] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+30-Jan-2024 19:25:06.300 INFO [http-nio-8080-exec-22] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/index.htm] onto handler 'indexController'
+30-Jan-2024 19:25:06.490 INFO [http-nio-8080-exec-22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:25:05 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:25:06.572 INFO [http-nio-8080-exec-22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:25:05 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:25:06.674 INFO [http-nio-8080-exec-22] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+30-Jan-2024 19:25:06.688 INFO [http-nio-8080-exec-22] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 889 ms
+30-Jan-2024 19:25:06.690 INFO [http-nio-8080-exec-22] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] is completed
+30-Jan-2024 19:36:56.025 INFO [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] has started
+30-Jan-2024 19:36:56.037 INFO [http-nio-8080-exec-27] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:25:05 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:36:56.071 INFO [http-nio-8080-exec-27] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Tue Jan 30 19:25:05 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:37:02.065 INFO [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Jan-2024 19:37:02.108 INFO [http-nio-8080-exec-27] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Jan-2024 19:37:02.188 INFO [http-nio-8080-exec-27] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Tue Jan 30 19:37:02 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:37:02.255 INFO [http-nio-8080-exec-27] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+30-Jan-2024 19:37:02.382 INFO [http-nio-8080-exec-27] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 274 ms
+30-Jan-2024 19:37:02.562 INFO [http-nio-8080-exec-27] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+30-Jan-2024 19:37:02.570 INFO [http-nio-8080-exec-27] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:37:02 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:37:02.571 INFO [http-nio-8080-exec-27] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+30-Jan-2024 19:37:03.177 INFO [http-nio-8080-exec-27] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/index.htm] onto handler 'indexController'
+30-Jan-2024 19:37:03.562 INFO [http-nio-8080-exec-27] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:37:02 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:37:03.699 INFO [http-nio-8080-exec-27] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:37:02 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:37:03.838 INFO [http-nio-8080-exec-27] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+30-Jan-2024 19:37:03.861 INFO [http-nio-8080-exec-27] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 1298 ms
+30-Jan-2024 19:37:03.865 INFO [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] is completed
+30-Jan-2024 19:37:37.211 SEVERE [http-nio-8080-exec-31] model.LoginUser.setUserBirthDay null
+	java.text.ParseException: Unparseable date: ""
+		at java.base/java.text.DateFormat.parse(DateFormat.java:399)
+		at model.LoginUser.setUserBirthDay(LoginUser.java:109)
+		at util.UserDao.userSession(UserDao.java:90)
+		at controller.Login.doPost(Login.java:112)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:682)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:765)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:367)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:885)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1688)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+30-Jan-2024 19:49:15.325 INFO [http-nio-8080-exec-37] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] has started
+30-Jan-2024 19:49:15.334 INFO [http-nio-8080-exec-37] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:37:02 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:49:15.353 INFO [http-nio-8080-exec-37] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Tue Jan 30 19:37:02 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:49:15.510 WARNING [http-nio-8080-exec-37] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Fast_Food] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Jan-2024 19:49:15.511 WARNING [http-nio-8080-exec-37] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Fast_Food] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:93)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+30-Jan-2024 19:49:19.160 INFO [http-nio-8080-exec-37] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Jan-2024 19:49:19.197 INFO [http-nio-8080-exec-37] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Jan-2024 19:49:19.259 INFO [http-nio-8080-exec-37] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Tue Jan 30 19:49:19 ICT 2024]; root of context hierarchy
+30-Jan-2024 19:49:19.321 INFO [http-nio-8080-exec-37] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+30-Jan-2024 19:49:19.427 INFO [http-nio-8080-exec-37] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 230 ms
+30-Jan-2024 19:49:19.515 INFO [http-nio-8080-exec-37] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+30-Jan-2024 19:49:19.520 INFO [http-nio-8080-exec-37] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:49:19 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:49:19.521 INFO [http-nio-8080-exec-37] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+30-Jan-2024 19:49:19.836 INFO [http-nio-8080-exec-37] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/index.htm] onto handler 'indexController'
+30-Jan-2024 19:49:19.986 INFO [http-nio-8080-exec-37] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:49:19 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:49:20.047 INFO [http-nio-8080-exec-37] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jan 30 19:49:19 ICT 2024]; parent: Root WebApplicationContext
+30-Jan-2024 19:49:20.131 INFO [http-nio-8080-exec-37] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+30-Jan-2024 19:49:20.140 INFO [http-nio-8080-exec-37] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 625 ms
+30-Jan-2024 19:49:20.141 INFO [http-nio-8080-exec-37] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Fast_Food] is completed
+30-Jan-2024 19:49:20.493 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1440)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1065)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:125)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:92)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1583)

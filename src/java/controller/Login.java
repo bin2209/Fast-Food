@@ -27,7 +27,6 @@ public class Login extends HttpServlet {
 
     private UserDao dao;
 
-//    private static String EDITPG = "/edit.jsp";
     private static String ADMINPG = "admin";
     private static String NORMALPG = "account";
 
@@ -81,11 +80,9 @@ public class Login extends HttpServlet {
                     break;
                 default:
                     request.getRequestDispatcher("login.jsp").forward(request, response);
-
             }
         } else {
             request.getRequestDispatcher("login.jsp").forward(request, response);
-
         }
     }
 
@@ -109,18 +106,21 @@ public class Login extends HttpServlet {
         //Validate Login with input
         if (this.dao.validateLogin(em, pw)) {
             //create session and store variables
-            LoginUser user = dao.userSession(em);
+            LoginUser loggedInUser = dao.userSession(em);
+            
             HttpSession session = request.getSession();
 
             // Khoi tao session trong database
-            session.setAttribute("userID", user.getUserID());
-            session.setAttribute("userFullName", user.getUserFullName());
-            session.setAttribute("userEmail", user.getUserEmail());
-            session.setAttribute("userSex", user.getUserSex());
-            session.setAttribute("userBirthDay", user.getUserBirthDay());
+            session.setAttribute("userID", loggedInUser.getUserID());
+            session.setAttribute("userFullName", loggedInUser.getUserFullName());
+            session.setAttribute("userEmail", loggedInUser.getUserEmail());
+            session.setAttribute("userSex", loggedInUser.getUserSex());
+            session.setAttribute("userBirthDay", String.valueOf(loggedInUser.getUserBirthDay()));
+            session.setAttribute("userRole", loggedInUser.getUserRole());
 
-//            session.setAttribute("userSex", user.getUserSex());
-//            session.setAttribute("userBirthDay", user.getUserBirthDay());
+                
+            request.setAttribute("user", loggedInUser);
+
             //load welcome page with session data
             response.sendRedirect(NORMALPG);
 

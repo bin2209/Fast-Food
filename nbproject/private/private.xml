@@ -2,6 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/Login.java</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/login.jsp</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/controller/Account.java</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/account.jsp</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/util/UserDao.java</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/loginstatus.jsp</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/src/java/model/LoginUser.java</file>
+            <file>file:/Users/mac/FPT%20Education/Java%20Web/Fast%20Food/web/register.jsp</file>
+        </group>
     </open-files>
 </project-private>

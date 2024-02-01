@@ -1,32 +1,32 @@
-<%-- 
-    Document   : account
-    Created on : Jan 19, 2024, 4:48:39 PM
-    Author     : mac
---%>
+<%@ page import="java.util.Enumeration" %>
+<%@ page import="model.LoginUser" %>
+<%@ page import="java.io.IOException" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ include file="include/header.jsp" %>
+<%@ include file="include/navbar.jsp" %>
+<%@ page isELIgnored="false" %>
 
-<%@page import="java.util.Enumeration"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ include file="../include/header.jsp" %>
-<%@ page import="java.io.IOException" %>  
-<%@ include file="../include/navbar.jsp" %>
+<jsp:useBean id="user" class="model.LoginUser" scope="session" />
+<jsp:setProperty name="user" property="*" />
+
+<title>${pageTitle}</title>
 
 <%
+    // Display session attributes for debugging (remove in production)
     Enumeration<String> attributeNames = session.getAttributeNames();
-
     while (attributeNames.hasMoreElements()) {
         String attributeName = attributeNames.nextElement();
         Object attributeValue = session.getAttribute(attributeName);
-
         out.println("<p>" + attributeName + ": " + attributeValue + "</p>");
     }
 %>
-<!-- Display session attributes -->
+
 <section class="untree_co-section">
     <div class="container">
         <div class="row">
             <div class="col-md-6 mb-5 mb-md-0">
                 <div class="p-3 p-lg-5 rounded-5 bg-white">
-                    <h2 class="h3 mb-3 text-black">Hi <span th:text="${session.getAttribute('userFullName')}">Guest</span>!</h2>
+                    <h2 class="h3 mb-3 text-black"> Hi ${user != null ? user.userFullName : 'Guest'}!</h2>
                     <p><a href="logout">Logout</a></p>
                     <ul class="list-group">
                         <li class="list-group-item"><a href="account/edit">Account detail</a></li>
@@ -40,24 +40,11 @@
             </div>
             <div class="col-md-6 mb-5 mb-md-0">
                 <div class="p-3 p-lg-5 rounded-5 bg-white">
-                   
-                    <th:block th:replace="${contentTemplate} :: edit"></th:block>
+                    <!-- Additional content for the second column if needed -->
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<script>
-    // Initial form state
-    var initialFormState = document.getElementById('myForm').innerHTML;
-
-    // Function to check form changes and enable/disable the button
-    function checkFormChanges() {
-        var submitButton = document.getElementById('submitButton');
-
-        // Enable the button if the form content has changed
-        submitButton.disabled = document.getElementById('myForm').innerHTML === initialFormState;
-    }
-</script>
-<%@ include file="../include/footer.jsp" %>
+<%@ include file="include/footer.jsp" %>
