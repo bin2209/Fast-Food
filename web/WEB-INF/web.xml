@@ -40,6 +40,10 @@
         <servlet-name>Error</servlet-name>
         <servlet-class>controller.Error</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ShipManager</servlet-name>
+        <servlet-class>controller.ShipManager</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
@@ -71,6 +75,10 @@
     <servlet-mapping>
         <servlet-name>Error</servlet-name>
         <url-pattern>/error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShipManager</servlet-name>
+        <url-pattern>/ShipManager</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
